@@ -28,5 +28,19 @@ public class A002 {
 
         System.out.println("Diferença de meses: "+ meses);
 
+    
+
+
+
+
+//System.out.println(hoje.compareTo(dataCadastro));
+int guarda = hoje.compareTo(dataCadastro);
+hoje.add(Calendar.DATE, 1);
+
+if(guarda == 1){
+    System.out.println("Data: "+ df.format(hoje.getTime()) + " é maior");
+}
+    
+
   }
 }
